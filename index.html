@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FREE MONEY DOWNLOAD NOW!!!</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<marquee class="top-scroll">
+  🚨 YOUR DEVICE IS NOT PROTECTED 🚨 MALWARE DETECTED 🚨 DOWNLOAD ANTI-VIRUS NOW 🚨 🚨 YOUR DEVICE IS NOT PROTECTED 🚨 MALWARE DETECTED 🚨 DOWNLOAD ANTI-VIRUS NOW 🚨 🚨 YOUR DEVICE IS NOT PROTECTED 🚨 MALWARE DETECTED 🚨 DOWNLOAD ANTI-VIRUS NOW 🚨 🚨 YOUR DEVICE IS NOT PROTECTED 🚨 MALWARE DETECTED 🚨 DOWNLOAD ANTI-VIRUS NOW 🚨
+</marquee>
+
+<h1 class="main-title">🔥 FREE PREMIUM CONTENT 🔥</h1>
+
+<div class="ad-grid">
+  <div class="ad">TAKE SURVEY FOR CASH</div>
+  <div class="ad">MAKE $5000 A DAY</div>
+  <div class="ad">HOT SINGLES 2 MILES AWAY</div>
+  <div class="ad">FREE ROBUX GENERATOR</div>
+  <div class="ad">CLAIM YOUR PRIZE</div>
+  <div class="ad">SYSTEM UPDATE REQUIRED</div>
+</div>
+
+<div class="big-download">⬇ DOWNLOAD NOW ⬇</div>
+
+<script>
+  const ads = document.querySelectorAll(".ad");
+  const bigDownload = document.querySelector(".big-download");
+
+  function createPopupAd() {
+    const popup = document.createElement("div");
+    popup.className = "popup-ad";
+    popup.innerText = "⚠ VIRUS DETECTED ⚠";
+
+    popup.style.top = Math.random() * (window.innerHeight - 120) + "px";
+    popup.style.left = Math.random() * (window.innerWidth - 220) + "px";
+
+    popup.onclick = () => {
+      for (let i = 0; i < 3; i++) {
+        createPopupAd();
+      }
+    };
+
+    document.body.appendChild(popup);
+  }
+
+  ads.forEach(ad => {
+    ad.addEventListener("click", () => {
+      for (let i = 0; i < 5; i++) {
+        createPopupAd();
+      }
+    });
+  });
+
+  bigDownload.addEventListener("click", () => {
+    for (let i = 0; i < 10; i++) {
+      createPopupAd();
+    }
+  });
+
+  setInterval(createPopupAd, 1200);
+</script>
+
+<div class="bottom-image">
+  <img src="photos/scammer.jpg"
+       alt="Happy customer stock image">
+  <p>✔ 100% TRUSTED BY MILLIONS</p>
+</div>
+
+</body>
+</html>
